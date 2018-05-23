@@ -7,7 +7,54 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    </Grid>-->
+    <Grid MaxHeight="1000" MinHeight="500"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="0" Name="Screen1" Text="Enter Numbers Here.." Height="150" Width="300" Margin="22"/>
+            <Grid Grid.Row="1" Margin="10" HorizontalAlignment="Center" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Name="but1" Grid.Row="0" Grid.Column="0"  Margin="10" Height="70" Width="70" Content="1"></Button>
+                <Button Name="but2" Grid.Row="0" Grid.Column="1" Margin="10" Height="70" Width="70" Content="2"></Button>
+                <Button Name="but3" Grid.Row="0" Grid.Column="2" Margin="10" Height="70" Width="70" Content="3"></Button>
+                <Button Name="but4" Grid.Row="0" Grid.Column="3" Margin="10" Height="70" Width="70" Content="/"></Button>
+
+                <Button Name="but5" Grid.Row="1" Grid.Column="0" Margin="10" Height="70" Width="70" Content="4"></Button>
+                <Button Name="but6" Grid.Row="1" Grid.Column="1" Margin="10" Height="70" Width="70" Content="5"></Button>
+                <Button Name="but7" Grid.Row="1" Grid.Column="2" Margin="10" Height="70" Width="70" Content="6"></Button>
+                <Button Name="but8" Grid.Row="1" Grid.Column="3" Margin="10" Height="70" Width="70" Content="*"></Button>
+
+                <Button Name="but9" Grid.Row="2" Grid.Column="0" Margin="10" Height="70" Width="70" Content="7"></Button>
+                <Button Name="but10" Grid.Row="2" Grid.Column="1" Margin="10" Height="70" Width="70" Content="8"></Button>
+                <Button Name="but11" Grid.Row="2" Grid.Column="2" Margin="10" Height="70" Width="70" Content="9"></Button>
+                <Button Name="but12" Grid.Row="2" Grid.Column="3" Margin="10" Height="70" Width="70" Content="-"></Button>
+
+                <Button Name="but13" Grid.Row="3" Grid.Column="0" Margin="10" Height="70" Width="70" Content="0"></Button>
+                <Button Name="but14" Grid.Row="3" Grid.Column="1" Margin="10" Height="70" Width="70" Content="."></Button>
+                <Button Name="but15" Grid.Row="3" Grid.Column="2" Margin="10" Height="70" Width="70" Content="="></Button>
+                <Button Name="but16" Grid.Row="3" Grid.Column="3" Margin="10" Height="70" Width="70" Content="+"></Button>
+            </Grid>
+
+        </Grid>
     </Grid>
+
 </Page>
