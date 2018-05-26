@@ -10,7 +10,7 @@
     <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     </Grid>-->
-    <Grid MaxHeight="1000" MinHeight="300"  Background="LightSkyBlue">
+    <Grid MaxHeight="1000" MinHeight="300"  Background="#FF5EA5D1">
         <Button Content="7" HorizontalAlignment="Left" Margin="115,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,2,1,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
@@ -22,12 +22,12 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <TextBox Height="136" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,20,50,0" HorizontalAlignment="Right" Width="1201" FontSize="100" Background="WhiteSmoke" BorderThickness="10" Name="tb" Text="">
+        <TextBox Height="136" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,20,50,0" HorizontalAlignment="Right" Width="1201" FontSize="100" Background="WhiteSmoke" BorderThickness="10" Name="tb" Text="" TextChanged="tb_TextChanged">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" />
             </TextBox.Foreground>
         </TextBox>
-        <Button Content="8" HorizontalAlignment="Left" Margin="263,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,2,1,1" Click="Button_Click_2">
+        <Button Content="8" HorizontalAlignment="Left" Margin="263,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,2,1,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -38,7 +38,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="9" HorizontalAlignment="Left" Margin="411,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,2,2,1" Click="Button_Click_3">
+        <Button Content="9" HorizontalAlignment="Left" Margin="411,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,2,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -49,7 +49,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="/" HorizontalAlignment="Left" Margin="641,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,2,2,1" Click="Button_Click_4">
+        <Button Content="/" HorizontalAlignment="Left" Margin="641,235,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,2,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -60,7 +60,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="4" HorizontalAlignment="Left" Margin="115,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,1,1" Click="Button_Click_5">
+        <Button Content="4" HorizontalAlignment="Left" Margin="115,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,1,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -71,7 +71,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="5" HorizontalAlignment="Left" Margin="263,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,1,1" Click="Button_Click_6">
+        <Button Content="5" HorizontalAlignment="Left" Margin="263,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,1,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -82,7 +82,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="6" HorizontalAlignment="Left" Margin="411,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,2,1" Click="Button_Click_7">
+        <Button Content="6" HorizontalAlignment="Left" Margin="411,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -93,7 +93,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="*" HorizontalAlignment="Left" Margin="641,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,1" Click="Button_Click_8">
+        <Button Content="*" HorizontalAlignment="Left" Margin="641,387,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -104,7 +104,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="1" HorizontalAlignment="Left" Margin="115,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,1,2" Click="Button_Click_9">
+        <Button Content="1" HorizontalAlignment="Left" Margin="115,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,1,2" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -115,7 +115,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="2" HorizontalAlignment="Left" Margin="263,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,1,2" Click="Button_Click_10">
+        <Button Content="2" HorizontalAlignment="Left" Margin="263,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,1,2" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -126,7 +126,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="3" HorizontalAlignment="Left" Margin="411,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,2,2" Click="Button_Click_11">
+        <Button Content="3" HorizontalAlignment="Left" Margin="411,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="1,1,2,2" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -137,7 +137,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="+" HorizontalAlignment="Left" Margin="641,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,1" Click="Button_Click_12">
+        <Button Content="+" HorizontalAlignment="Left" Margin="641,539,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -148,7 +148,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="0" HorizontalAlignment="Left" Margin="114,737,0,0" VerticalAlignment="Top" Width="445" Height="150" FontSize="100" BorderThickness="2,2,2,2" Click="Button_Click_13">
+        <Button Content="0" HorizontalAlignment="Left" Margin="118,731,0,0" VerticalAlignment="Top" Width="445" Height="150" FontSize="100" BorderThickness="2,2,2,2" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -159,7 +159,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="-" HorizontalAlignment="Left" Margin="641,689,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,2" Click="Button_Click_14">
+        <Button Content="-" HorizontalAlignment="Left" Margin="641,689,0,0" VerticalAlignment="Top" Width="146" Height="150" FontSize="100" BorderThickness="2,1,2,2" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -170,7 +170,7 @@
                 <SolidColorBrush Color="LightGray"/>
             </Button.Background>
         </Button>
-        <Button Content="Calcular" HorizontalAlignment="Left" Margin="929,342,0,0" VerticalAlignment="Top" Width="462" Height="385" FontSize="100" BorderThickness="2,1,2,2" Click="Button_Click_15">
+        <Button Content="Calcular" HorizontalAlignment="Left" Margin="929,342,0,0" VerticalAlignment="Top" Width="462" Height="385" FontSize="100" BorderThickness="2,1,2,2" Click="Button_Calcular">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -178,7 +178,18 @@
                 <SolidColorBrush Color="Black"/>
             </Button.BorderBrush>
             <Button.Background>
-                <SolidColorBrush Color="MintCream"/>
+                <SolidColorBrush Color="#FFA6A154"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Reiniciar" HorizontalAlignment="Left" Margin="929,755,0,0" VerticalAlignment="Top" Width="462" Height="148" FontSize="100" BorderThickness="2,1,2,2" Click="Button_Borrar">
+            <Button.Foreground>
+                <SolidColorBrush Color="Black"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="Black"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="#FFDCCD49"/>
             </Button.Background>
         </Button>
     </Grid>

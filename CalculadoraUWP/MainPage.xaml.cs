@@ -26,7 +26,10 @@ namespace CalculadoraUWP
         {
             this.InitializeComponent();
         }
+        private void tb_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
