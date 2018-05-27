@@ -26,13 +26,76 @@ namespace CalculadoraUWP
         {
             this.InitializeComponent();
         }
-        private void tb_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Button b = (Button)sender;
+            tb.Text += b.Content.ToString();
+        }
 
+        private void Button_Calcular(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.Calcular();
+            }
+            catch (Exception ex)
+            {
+                tb.Text = "Error en la operación";
+            }
+        }
+
+        private void Button_Borrar(object sender, RoutedEventArgs e)
+        {
+            tb.Text = "";
+        }
+
+
+        private void Calcular()
+        {
+            String operacion;
+            int indexSeparador = 0;
+            if (tb.Text.Contains("+"))
+            {
+                indexSeparador = tb.Text.IndexOf("+");
+            }
+            else if (tb.Text.Contains("-"))
+            {
+                indexSeparador = tb.Text.IndexOf("-");
+            }
+            else if (tb.Text.Contains("*"))
+            {
+                indexSeparador = tb.Text.IndexOf("*");
+            }
+            else if (tb.Text.Contains("/"))
+            {
+                indexSeparador = tb.Text.IndexOf("/");
+            }
+            else
+            {
+                throw new Exception();   
+            }
+
+            operacion = tb.Text.Substring(indexSeparador, 1);
+            double op1 = Convert.ToDouble(tb.Text.Substring(0, indexSeparador));
+            double op2 = Convert.ToDouble(tb.Text.Substring(indexSeparador + 1, tb.Text.Length - indexSeparador - 1));
+
+            if (operacion == "+")
+            {
+                tb.Text =  (op1 + op2).ToString();
+            }
+            else if (operacion == "-")
+            {
+                tb.Text = (op1 - op2).ToString();
+            }
+            else if (operacion == "*")
+            {
+                tb.Text = (op1 * op2).ToString();
+            }
+            else
+            {
+                tb.Text =  (op1 / op2).ToString();
+            }
         }
     }
+
 }
